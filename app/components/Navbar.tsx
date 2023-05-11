@@ -40,8 +40,8 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`md:hidden z-10 fixed left-0 top-[84px] w-full h-screen bg-black/70 transition-opacity duration-500 ease-in-out ${
-          nav ? "opacity-100" : "opacity-0"
+        className={`md:hidden fixed left-0 w-full h-screen bg-black/70 transition-opacity duration-500 ease-in-out ${
+          nav ? "opacity-100 z-10 " : "opacity-0 -z-10"
         }`}
       >
         <div

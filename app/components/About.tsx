@@ -7,7 +7,7 @@ import Button from "./Button";
 const About = () => {
   return (
     <div className="w-full md:h-screen p-2 items-center bg-light">
-      <PageIndex title="ABOUT" subTitle="ABOUT ME" />
+      <PageIndex title="ABOUT" subTitle="ABOUT ME" className="mb-10 md:mb-20" />
       <div className="max-w-[1600px] m-auto">
         <div className="m-auto grid grid-cols-3 gap-6">
           <div className="col-span-3 md:col-span-1">
@@ -76,7 +76,7 @@ const About = () => {
             <div className="flex items-center">
               <Button
                 title="모듈화와 재사용성"
-                className="my-3 mx-auto font-nanum"
+                className="my-3 mx-auto font-nanum cursor-default"
               />
             </div>
             <p className="mx-2 font-nanum text-xs sm:text-sm text-gray-600 text-center">
@@ -89,7 +89,7 @@ const About = () => {
             <div className="flex items-center">
               <Button
                 title="적극적인 협업"
-                className="my-3 mx-auto font-nanum"
+                className="my-3 mx-auto font-nanum cursor-default"
               />
             </div>
             <p className="mx-2 font-nanum text-xs sm:text-sm text-gray-600 text-center">
@@ -102,7 +102,7 @@ const About = () => {
             <div className="flex items-center">
               <Button
                 title="끊임없는 성장"
-                className="my-3 mx-auto font-nanum"
+                className="my-3 mx-auto font-nanum cursor-default"
               />
             </div>
             <p className="mx-2 font-nanum text-xs sm:text-sm text-gray-600 text-center">
@@ -115,7 +115,7 @@ const About = () => {
             <div className="flex items-center">
               <Button
                 title="문제 해결 능력"
-                className="my-3 mx-auto font-nanum"
+                className="my-3 mx-auto font-nanum cursor-default"
               />
             </div>
             <p className="mx-2 font-nanum text-xs sm:text-sm text-gray-600 text-center">

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Projects from "./components/Project";
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mont" });
 const roboto = Roboto({
@@ -36,6 +37,7 @@ export default function RootLayout({
         <Main />
         <About />
         <Skills />
+        <Projects />
         {children}
       </body>
     </html>

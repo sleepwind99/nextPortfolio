@@ -1,5 +1,5 @@
 "use client";
-import React, { ReactNode, useState, useRef } from "react";
+import React, { ReactNode, useState } from "react";
 import Card from "./Card";
 import { BsFiletypeCss } from "react-icons/bs";
 import { AiFillHtml5, AiFillCloseCircle } from "react-icons/ai";
@@ -185,22 +185,25 @@ const CardCollection = () => {
     },
   ];
   const [select, setSelect] = useState<CardProps | null>(null);
-  const ratingRef = useRef(null);
 
   return (
     <div className="grid grid-cols-12 m-auto">
-      {cards.map((card) => (
-        <Card
-          title={card.title}
-          barClass={card.barClass}
-          content={card.content}
-          rating={card.rating}
-          icons={card.icons}
-          key={card.title}
-          className={card.className}
-          onClick={() => setSelect(card)}
-        />
-      ))}
+      {cards.map((card) =>
+        select?.title === card.title ? (
+          <></>
+        ) : (
+          <Card
+            title={card.title}
+            barClass={card.barClass}
+            content={card.content}
+            rating={card.rating}
+            icons={card.icons}
+            key={card.title}
+            className={card.className}
+            onClick={() => setSelect(card)}
+          />
+        )
+      )}
       <AnimatePresence>
         {select && (
           <motion.div
@@ -208,10 +211,10 @@ const CardCollection = () => {
             onClick={() => setSelect(null)}
           >
             <motion.div
-              ref={ratingRef}
               layoutId={select.title}
               className={`fixed top-[200px] left-[10%] w-[80%] sm:left-[15%] sm:w-[70%] md:left-[20%] md:w-[60%] lg:left-[30%] lg:w-[40%] z-10 bg-light border-gray-300 border-[1px] shadow-lg block rounded-md items-center`}
               transition={{ duration: 0.3 }}
+              exit={{ transition: { duration: 0.3 } }}
             >
               <motion.button
                 className="absolute top-2 right-2"

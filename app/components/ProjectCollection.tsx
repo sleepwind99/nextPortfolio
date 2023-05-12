@@ -12,6 +12,7 @@ import todoList1 from "@/public/images/todoList1.png";
 import todoList2 from "@/public/images/todoList2.jpg";
 import { motion, AnimatePresence } from "framer-motion";
 import { AiFillCloseCircle } from "react-icons/ai";
+import ScrollLock from "react-scrolllock";
 
 type ProjectImageProps = {
   className?: string;
@@ -31,13 +32,13 @@ const ProjectCollection = () => {
           src={clone1}
           key={"clone1"}
           alt="clone1"
-          className={`rounded-lg shadow-md col-span-6 md:col-span-3`}
+          className={`rounded-lg shadow-md col-span-3`}
         />,
         <Image
           src={clone2}
           key={"clone2"}
           alt="clone2"
-          className={`rounded-lg shadow-md col-span-6 md:col-span-3`}
+          className={`rounded-lg shadow-md col-span-3`}
         />,
       ],
       content:
@@ -52,13 +53,13 @@ const ProjectCollection = () => {
           src={todoList1}
           key={"todoList1"}
           alt="todoList1"
-          className={`rounded-lg shadow-md col-span-6 md:col-span-3`}
+          className={`rounded-lg shadow-md col-span-3`}
         />,
         <Image
           src={todoList2}
           key={"todoList2"}
           alt="todoList2"
-          className={`rounded-lg shadow-md col-span-6 md:col-span-3`}
+          className={`rounded-lg shadow-md col-span-3`}
         />,
       ],
       content:
@@ -81,13 +82,13 @@ const ProjectCollection = () => {
           src={adminPage1}
           key={"adminPage1"}
           alt="adminPage1"
-          className={`rounded-lg shadow-md col-span-6 md:col-span-3`}
+          className={`rounded-lg shadow-md col-span-3`}
         />,
         <Image
           src={adminPage2}
           key={"adminPage2"}
           alt="adminPage2"
-          className={`rounded-lg shadow-md col-span-6 md:col-span-3`}
+          className={`rounded-lg shadow-md col-span-3`}
         />,
       ],
       content:
@@ -110,13 +111,13 @@ const ProjectCollection = () => {
           src={portfolio1}
           key={"portfolio1"}
           alt="portfolio1"
-          className={`rounded-lg shadow-md col-span-6 md:col-span-3`}
+          className={`rounded-lg shadow-md col-span-3`}
         />,
         <Image
           src={portfolio2}
           key={"portfolio2"}
           alt="portfolio2"
-          className={`rounded-lg shadow-md col-span-6 md:col-span-3`}
+          className={`rounded-lg shadow-md col-span-3`}
         />,
       ],
       content:
@@ -135,7 +136,7 @@ const ProjectCollection = () => {
           >
             <motion.div
               layoutId={select.title}
-              className={`col-span-6 border border-gray-400 shadow-xl rounded-xl relative mt-[30%] md:mt-[10%] mx-[10%] md:mx-[15%] bg-light`}
+              className={`col-span-6 border border-gray-400 shadow-xl rounded-xl relative mt-[30%] md:mt-[10%] mx-[5%] md:mx-[15%] bg-light`}
               transition={{ duration: 0.3 }}
               onClick={(event) => event.stopPropagation()}
             >
@@ -145,7 +146,8 @@ const ProjectCollection = () => {
               >
                 <AiFillCloseCircle size={20} color="gray" />
               </motion.button>
-              <div className="m-10">
+              <ScrollLock />
+              <div className="m-5 md:m-10">
                 <motion.div className="grid grid-cols-6 gap-6">
                   {select.images.map((image) => image)}
                 </motion.div>
@@ -195,7 +197,7 @@ type TagProps = {
 const CustomTag = ({ title, className = "" }: TagProps) => {
   return (
     <span
-      className={`inline-block px-1 bg-point border-[2px] border-yellow-600 rounded-xl mr-1 ${className}`}
+      className={`inline-block px-1 bg-point border-[2px] border-yellow-600 rounded-xl mr-1 font-robo ${className}`}
     >
       {title}
     </span>

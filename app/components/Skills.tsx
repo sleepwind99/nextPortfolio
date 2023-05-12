@@ -4,7 +4,7 @@ import CardCollection from "./CardCollection";
 
 const Skills = () => {
   return (
-    <div className="w-full md:h-screen p-2 items-center bg-light">
+    <div className="w-full xl:h-screen p-2 items-center bg-light">
       <div className="max-w-[1600px] m-auto">
         <PageIndex title="SKILLS" subTitle="SKILLS" className="mb-5" />
         <h1 className="font-nanum text-center text-lg md:text-xl mb-3">

@@ -19,7 +19,8 @@ import {
 import { RiVuejsFill, RiReactjsFill } from "react-icons/ri";
 import { FaNode } from "react-icons/fa";
 import { TbBrandCpp } from "react-icons/tb";
-import { AnimatePresence, motion, useInView } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import ScrollLock from "react-scrolllock";
 
 type CardProps = {
   title: string;
@@ -215,6 +216,7 @@ const CardCollection = () => {
               className={`fixed top-[200px] left-[10%] w-[80%] sm:left-[15%] sm:w-[70%] md:left-[20%] md:w-[60%] lg:left-[30%] lg:w-[40%] z-10 bg-light border-gray-300 border-[1px] shadow-lg block rounded-md items-center`}
               transition={{ duration: 0.3 }}
               exit={{ transition: { duration: 0.3 } }}
+              onClick={(event) => event.stopPropagation()}
             >
               <motion.button
                 className="absolute top-2 right-2"
@@ -222,6 +224,7 @@ const CardCollection = () => {
               >
                 <AiFillCloseCircle size={20} color="gray" />
               </motion.button>
+              <ScrollLock />
               <motion.div className="flex justify-between m-3 items-center">
                 <motion.div className="block font-nanum text-sm text-gray-600 mx-5">
                   {select.content}

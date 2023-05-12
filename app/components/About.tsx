@@ -6,7 +6,7 @@ import Button from "./Button";
 
 const About = () => {
   return (
-    <div className="w-full md:h-screen p-2 items-center bg-light">
+    <div className="w-full xl:h-screen p-2 items-center bg-light">
       <PageIndex title="ABOUT" subTitle="ABOUT ME" className="mb-10 md:mb-20" />
       <div className="max-w-[1600px] m-auto">
         <div className="m-auto grid grid-cols-3 gap-6">

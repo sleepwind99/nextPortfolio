@@ -197,7 +197,7 @@ type TagProps = {
 const CustomTag = ({ title, className = "" }: TagProps) => {
   return (
     <span
-      className={`inline-block px-1 bg-point border-[2px] border-yellow-600 rounded-xl mr-1 font-robo ${className}`}
+      className={`inline-block px-2 bg-point border-[2px] border-yellow-600 rounded-xl mx-1 font-robo ${className}`}
     >
       {title}
     </span>

@@ -1,12 +1,12 @@
 import React from "react";
-import PageIndex from "./PageIndex";
+import PageIndex from "../components/PageIndex";
 import LGTM from "@/public/images/LGTM.png";
 import Image from "next/image";
-import Button from "./Button";
+import Button from "../components/Button";
 
 const About = () => {
   return (
-    <div className="w-full xl:h-screen p-2 items-center bg-light">
+    <div className="w-full xl:h-screen p-2 items-center bg-light" id="About">
       <PageIndex title="ABOUT" subTitle="ABOUT ME" className="mb-10 md:mb-20" />
       <div className="max-w-[1600px] m-auto">
         <div className="m-auto grid grid-cols-3 gap-6">

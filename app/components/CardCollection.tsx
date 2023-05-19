@@ -208,7 +208,7 @@ const CardCollection = () => {
       <AnimatePresence>
         {select && (
           <motion.div
-            className="fixed w-screen h-screen z-20 bg-black/70 top-0 left-0"
+            className="fixed w-screen h-screen z-40 bg-black/70 top-0 left-0"
             onClick={() => setSelect(null)}
           >
             <motion.div

@@ -20,7 +20,6 @@ const Form = () => {
       const response = await axios.post("http://localhost:3000/api/sendmail", {
         file: datas,
       });
-      console.log(response.data);
       setDatas(["", "", "", ""]);
     } catch (error) {
       console.log("Error: ", error);

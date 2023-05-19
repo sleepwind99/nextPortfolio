@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/nodemailer", "npm:6.4.7"],\
             ["@types/react", "npm:18.2.5"],\
             ["@types/react-dom", "npm:18.2.4"],\
+            ["@types/react-scroll", "npm:1.8.7"],\
             ["autoprefixer", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:10.4.14"],\
             ["axios", "npm:1.4.0"],\
             ["debug", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:4.3.4"],\
@@ -46,6 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:18.2.0"],\
             ["react-icons", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:4.8.0"],\
             ["react-popper", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:2.3.0"],\
+            ["react-scroll", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:1.8.9"],\
             ["react-scrolllock", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:5.0.1"],\
             ["react-tiny-popover", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:7.2.4"],\
             ["supports-color", "npm:8.1.1"],\
@@ -514,6 +516,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-react-dom-npm-18.2.4-5d62ac2096-8301f35cf1.zip/node_modules/@types/react-dom/",\
           "packageDependencies": [\
             ["@types/react-dom", "npm:18.2.4"],\
+            ["@types/react", "npm:18.2.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/react-scroll", [\
+        ["npm:1.8.7", {\
+          "packageLocation": "./.yarn/cache/@types-react-scroll-npm-1.8.7-4b96d4002b-1308d2d24b.zip/node_modules/@types/react-scroll/",\
+          "packageDependencies": [\
+            ["@types/react-scroll", "npm:1.8.7"],\
             ["@types/react", "npm:18.2.5"]\
           ],\
           "linkType": "HARD"\
@@ -3263,6 +3275,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["lodash.throttle", [\
+        ["npm:4.1.1", {\
+          "packageLocation": "./.yarn/cache/lodash.throttle-npm-4.1.1-856641af92-129c0a28ce.zip/node_modules/lodash.throttle/",\
+          "packageDependencies": [\
+            ["lodash.throttle", "npm:4.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["loose-envify", [\
         ["npm:1.4.0", {\
           "packageLocation": "./.yarn/cache/loose-envify-npm-1.4.0-6307b72ccf-6517e24e0c.zip/node_modules/loose-envify/",\
@@ -4006,6 +4027,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/nodemailer", "npm:6.4.7"],\
             ["@types/react", "npm:18.2.5"],\
             ["@types/react-dom", "npm:18.2.4"],\
+            ["@types/react-scroll", "npm:1.8.7"],\
             ["autoprefixer", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:10.4.14"],\
             ["axios", "npm:1.4.0"],\
             ["debug", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:4.3.4"],\
@@ -4019,6 +4041,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:18.2.0"],\
             ["react-icons", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:4.8.0"],\
             ["react-popper", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:2.3.0"],\
+            ["react-scroll", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:1.8.9"],\
             ["react-scrolllock", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:5.0.1"],\
             ["react-tiny-popover", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:7.2.4"],\
             ["supports-color", "npm:8.1.1"],\
@@ -4348,6 +4371,34 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@popperjs/core",\
             "@types/popperjs__core",\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-scroll", [\
+        ["npm:1.8.9", {\
+          "packageLocation": "./.yarn/cache/react-scroll-npm-1.8.9-f47b5ae322-534ea65713.zip/node_modules/react-scroll/",\
+          "packageDependencies": [\
+            ["react-scroll", "npm:1.8.9"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:1.8.9", {\
+          "packageLocation": "./.yarn/__virtual__/react-scroll-virtual-f481976ad1/0/cache/react-scroll-npm-1.8.9-f47b5ae322-534ea65713.zip/node_modules/react-scroll/",\
+          "packageDependencies": [\
+            ["react-scroll", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:1.8.9"],\
+            ["@types/react", "npm:18.2.5"],\
+            ["@types/react-dom", "npm:18.2.4"],\
+            ["lodash.throttle", "npm:4.1.1"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
             "@types/react-dom",\
             "@types/react",\
             "react-dom",\

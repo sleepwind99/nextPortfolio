@@ -1,30 +1,68 @@
 "use client";
 import React, { useState } from "react";
 import Logo from "./Logo";
-import Link from "next/link";
 import { AiOutlineMenu } from "react-icons/ai";
-
-type CustomLinkProps = {
-  title: string;
-  href: string;
-  className?: string;
-};
+import { scroller } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
   };
+  const scrollComponent = (id: string) => {
+    setNav(false);
+    scroller.scrollTo(id, {
+      duration: 800,
+      delay: 50,
+      smooth: "easeInOutQuart",
+      offset: -70,
+    });
+  };
   return (
-    <div className="z-40">
-      <div className=" flex justify-between items-center w-full p-4 md:p-6 bg-light text-dark font-mont shadow-lg fixed z-50">
+    <div className="z-30">
+      <div className=" flex justify-between items-center w-full p-4 md:p-6 bg-light text-dark font-mont shadow-lg fixed z-30">
         <Logo />
         <div className="hidden md:flex justify-center items-center">
-          <CustomLink title="Home" href="/" className="mr-3" />
-          <CustomLink title="About Me" href="/about" className="mx-3" />
-          <CustomLink title="Skills" href="/skills" className="mx-3" />
-          <CustomLink title="Projects" href="/projects" className="mx-3" />
-          <CustomLink title="Contact" href="/contact" className="ml-3" />
+          <div className={`relative mr-3`}>
+            <span
+              onClick={() => scrollComponent("Main")}
+              className="cursor-pointer"
+            >
+              Home
+            </span>
+          </div>
+          <div className={`relative mx-3`}>
+            <span
+              onClick={() => scrollComponent("About")}
+              className="cursor-pointer"
+            >
+              About
+            </span>
+          </div>
+          <div className={`relative mx-3`}>
+            <span
+              onClick={() => scrollComponent("Skills")}
+              className="cursor-pointer"
+            >
+              Skills
+            </span>
+          </div>
+          <div className={`relative mx-3`}>
+            <span
+              onClick={() => scrollComponent("Projects")}
+              className="cursor-pointer"
+            >
+              Projects
+            </span>
+          </div>
+          <div className={`relative ml-3`}>
+            <span
+              onClick={() => scrollComponent("Contact")}
+              className="cursor-pointer"
+            >
+              Contact
+            </span>
+          </div>
         </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -50,22 +88,49 @@ const Navbar = () => {
           }`}
         >
           <div className=" justify-center items-center text-center">
-            <CustomLink title="Home" href="/" className="my-5" />
-            <CustomLink title="About Me" href="/about" className="my-5" />
-            <CustomLink title="Skills" href="/skills" className="my-5" />
-            <CustomLink title="Projects" href="/projects" className="my-5" />
-            <CustomLink title="Contact" href="/contact" className="my-5" />
+            <div className={`relative my-3`}>
+              <span
+                onClick={() => scrollComponent("Main")}
+                className="cursor-pointer"
+              >
+                Main
+              </span>
+            </div>
+            <div className={`relative my-3`}>
+              <span
+                onClick={() => scrollComponent("About")}
+                className="cursor-pointer"
+              >
+                About Me
+              </span>
+            </div>
+            <div className={`relative my-3`}>
+              <span
+                onClick={() => scrollComponent("Skills")}
+                className="cursor-pointer"
+              >
+                Skills
+              </span>
+            </div>
+            <div className={`relative my-3`}>
+              <span
+                onClick={() => scrollComponent("Projects")}
+                className="cursor-pointer"
+              >
+                Projects
+              </span>
+            </div>
+            <div className={`relative my-3`}>
+              <span
+                onClick={() => scrollComponent("Contact")}
+                className="cursor-pointer"
+              >
+                Contact
+              </span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  );
-};
-
-const CustomLink = ({ title, href, className = "" }: CustomLinkProps) => {
-  return (
-    <div className={`relative ${className} `}>
-      <Link href={href}>{title}</Link>
     </div>
   );
 };

@@ -27,7 +27,7 @@ const ProjectImage = ({
     >
       {image}
       <motion.div
-        className="absolute opacity-0 flex top-[35%] left-[35%] bg-point shadow-xl z-10 w-[30%] h-[30%] rounded-sm items-center justify-center cursor-pointer"
+        className="absolute opacity-0 flex top-[35%] left-[35%] bg-point shadow-xl z-[5] w-[30%] h-[30%] rounded-sm items-center justify-center cursor-pointer"
         whileHover={{
           opacity: 1,
           scale: 2.5,

@@ -376,6 +376,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-scroll@npm:^1.8.7":
+  version: 1.8.7
+  resolution: "@types/react-scroll@npm:1.8.7"
+  dependencies:
+    "@types/react": "*"
+  checksum: 1308d2d24bcd9e2e78eaaff3b29ed6df59d903c32d0e0d94536ade4b34f544d09737a18798e38ed1c613d2b8b634f83736a64ef55a072686dacdca1e94f4cc05
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:*, @types/react@npm:18.2.5":
   version: 18.2.5
   resolution: "@types/react@npm:18.2.5"
@@ -2638,6 +2647,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.throttle@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "lodash.throttle@npm:4.1.1"
+  checksum: 129c0a28cee48b348aef146f638ef8a8b197944d4e9ec26c1890c19d9bf5a5690fe11b655c77a4551268819b32d27f4206343e30c78961f60b561b8608c8c805
+  languageName: node
+  linkType: hard
+
 "loose-envify@npm:^1.0.0, loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
@@ -3313,6 +3329,7 @@ __metadata:
     "@types/nodemailer": ^6.4.7
     "@types/react": 18.2.5
     "@types/react-dom": 18.2.4
+    "@types/react-scroll": ^1.8.7
     autoprefixer: 10.4.14
     axios: ^1.4.0
     debug: ^4.3.4
@@ -3326,6 +3343,7 @@ __metadata:
     react-dom: 18.2.0
     react-icons: ^4.8.0
     react-popper: ^2.3.0
+    react-scroll: ^1.8.9
     react-scrolllock: ^5.0.1
     react-tiny-popover: ^7.2.4
     supports-color: 8.1.1
@@ -3450,7 +3468,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -3528,6 +3546,19 @@ __metadata:
     react: ^16.8.0 || ^17 || ^18
     react-dom: ^16.8.0 || ^17 || ^18
   checksum: 837111c98738011c69b3069a464ea5bdcbf487105b6148e8faf90cb7337e134edb1b98b8824322941c378756cca30a15c18c25f558e53b85ed5762fa0dc8e6b2
+  languageName: node
+  linkType: hard
+
+"react-scroll@npm:^1.8.9":
+  version: 1.8.9
+  resolution: "react-scroll@npm:1.8.9"
+  dependencies:
+    lodash.throttle: ^4.1.1
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: 534ea65713a59ef7ddf623e38058220b654730352b624371cb2250bcf99784806b4564f3fa9295c969980e227e3de15903d95e069f9a3ca520ff0c0c1fb2e362
   languageName: node
   linkType: hard
 

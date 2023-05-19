@@ -1,10 +1,10 @@
 import React from "react";
-import PageIndex from "./PageIndex";
-import ProjectCollection from "./ProjectCollection";
+import PageIndex from "../components/PageIndex";
+import ProjectCollection from "../components/ProjectCollection";
 
 const Projects = () => {
   return (
-    <div className="w-full xl:h-screen p-2 items-center bg-light">
+    <div className="w-full xl:h-screen p-2 items-center bg-light" id="Projects">
       <PageIndex
         title="PROJECTS"
         subTitle="PROJECTS"

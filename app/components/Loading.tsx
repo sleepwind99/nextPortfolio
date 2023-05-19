@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import ScrollLock from "react-scrolllock";
 type LoadingProps = {
   on: boolean;
   className?: string;
@@ -8,19 +9,22 @@ type LoadingProps = {
 
 const Loading = ({ on, className = "" }: LoadingProps) => {
   return (
-    <motion.div
-      className={`fixed left-0 top-0 w-screen h-screen z-40 bg-black opacity-60 ${
-        on ? "hidden" : "block"
-      } ${className}`}
-      whileInView={{ opacity: 100 }}
-      exit={{ opacity: 0 }}
-    >
-      <motion.div
-        className={`fixed left-[49%] top-[49%] w-[2%] h-[@%] z-50 ${
-          on ? "hidden" : "inline-block"
-        } border-[4px] border-l-light rounded-full animate-spin ${className}`}
-      ></motion.div>
-    </motion.div>
+    <AnimatePresence>
+      {on && (
+        <motion.div
+          key="loading"
+          className={`fixed left-0 top-0 w-screen h-screen z-40 bg-black `}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.7 }}
+          transition={{ duration: 0.3 }}
+        >
+          <div
+            className={`fixed left-[47%] top-[47%] w-[60px] h-[60px] z-50 border-[4px] border-l-light border-r-gray-600 rounded-full animate-spin ${className}`}
+          ></div>
+          <ScrollLock />
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 

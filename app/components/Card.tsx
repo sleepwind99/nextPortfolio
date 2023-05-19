@@ -1,6 +1,6 @@
-import React, { ReactNode, useRef, useState } from "react";
+import React, { ReactNode, useRef } from "react";
 import { MdImageNotSupported } from "react-icons/md";
-import { motion, useInView, AnimatePresence } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 type CardProps = {
   title: string;

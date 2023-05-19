@@ -4,7 +4,7 @@ import ProjectCollection from "../components/ProjectCollection";
 
 const Projects = () => {
   return (
-    <div className="w-full xl:h-screen p-2 items-center bg-light" id="Projects">
+    <div className="w-full p-2 items-center bg-light" id="Projects">
       <PageIndex
         title="PROJECTS"
         subTitle="PROJECTS"

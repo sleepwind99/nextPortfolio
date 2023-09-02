@@ -16,4 +16,4 @@ one page site를 기본 틀로, 각 header index에 해당하는 요소는 page�
 - animation : framer 라이브러리를 사용하여, 좀 더 자연스럽고 역동적인 animation 구현
 
 ## ⚙️ 기술 스택
-<img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"> <img src="https://img.shields.io/badge/yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white">
+<img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"> <img src="https://img.shields.io/badge/yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white"> <img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">

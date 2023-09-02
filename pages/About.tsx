@@ -1,8 +1,8 @@
 import React from "react";
-import PageIndex from "../components/PageIndex";
+import PageIndex from "@/components/PageIndex";
 import LGTM from "@/public/images/LGTM.png";
 import Image from "next/image";
-import Button from "../components/Button";
+import Button from "@/components/Button";
 
 const About = () => {
   return (

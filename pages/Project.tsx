@@ -1,6 +1,6 @@
 import React from "react";
-import PageIndex from "../components/PageIndex";
-import ProjectCollection from "../components/ProjectCollection";
+import PageIndex from "@/components/PageIndex";
+import ProjectCollection from "@/components/ProjectCollection";
 
 const Projects = () => {
   return (

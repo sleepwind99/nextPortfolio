@@ -1,6 +1,6 @@
 import React from "react";
-import PageIndex from "../components/PageIndex";
-import CardCollection from "../components/CardCollection";
+import PageIndex from "@/components/PageIndex";
+import CardCollection from "@/components/CardCollection";
 
 const Skills = () => {
   return (

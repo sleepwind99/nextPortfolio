@@ -2014,6 +2014,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"googleapi@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "googleapi@npm:1.0.2"
+  checksum: f3d7eb9e80e236a68c92bb58578d941ba260cea9cb54351c03fb41a249f04212f040d63a72b7c529466788d02e8a9dc70b355ca1b4dea3c035c035521d28a53c
+  languageName: node
+  linkType: hard
+
 "gopd@npm:^1.0.1":
   version: 1.0.1
   resolution: "gopd@npm:1.0.1"
@@ -3336,6 +3343,7 @@ __metadata:
     eslint: 8.40.0
     eslint-config-next: 13.4.1
     framer-motion: ^10.12.8
+    googleapi: ^1.0.2
     next: 13.4.1
     nodemailer: ^6.9.2
     postcss: 8.4.23

@@ -40,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.40.0"],\
             ["eslint-config-next", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:13.4.1"],\
             ["framer-motion", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:10.12.8"],\
+            ["googleapi", "npm:1.0.2"],\
             ["next", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:13.4.1"],\
             ["nodemailer", "npm:6.9.2"],\
             ["postcss", "npm:8.4.23"],\
@@ -2543,6 +2544,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["googleapi", [\
+        ["npm:1.0.2", {\
+          "packageLocation": "./.yarn/cache/googleapi-npm-1.0.2-82a77ca944-f3d7eb9e80.zip/node_modules/googleapi/",\
+          "packageDependencies": [\
+            ["googleapi", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["gopd", [\
         ["npm:1.0.1", {\
           "packageLocation": "./.yarn/cache/gopd-npm-1.0.1-10c1d0b534-a5ccfb8806.zip/node_modules/gopd/",\
@@ -4034,6 +4044,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.40.0"],\
             ["eslint-config-next", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:13.4.1"],\
             ["framer-motion", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:10.12.8"],\
+            ["googleapi", "npm:1.0.2"],\
             ["next", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:13.4.1"],\
             ["nodemailer", "npm:6.9.2"],\
             ["postcss", "npm:8.4.23"],\

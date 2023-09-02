@@ -1,6 +1,6 @@
 import React from "react";
-import PageIndex from "../components/PageIndex";
-import Form from "../components/Form";
+import PageIndex from "@/components/PageIndex";
+import Form from "@/components/Form";
 
 const Contact = () => {
   return (

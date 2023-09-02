@@ -1,11 +1,11 @@
 import "./globals.css";
 import { Montserrat, Roboto, Nanum_Gothic } from "next/font/google";
-import Navbar from "./components/Navbar";
-import Main from "./pages/Main";
-import About from "./pages/About";
-import Skills from "./pages/Skills";
-import Projects from "./pages/Project";
-import Contact from "./pages/Contact";
+import Navbar from "@/components/Navbar";
+import Main from "@/pages/Main";
+import About from "@/pages/About";
+import Skills from "@/pages/Skills";
+import Projects from "@/pages/Project";
+import Contact from "@/pages/Contact";
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mont" });
 const roboto = Roboto({

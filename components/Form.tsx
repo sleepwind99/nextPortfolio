@@ -17,7 +17,7 @@ const Form = () => {
     event.preventDefault();
     try {
       setIsLoading(true);
-      const response = await axios.post("http://localhost:3000/api/sendmail", {
+      const response = await axios.post("./api/sendmail", {
         file: datas,
       });
       setDatas(["", "", "", ""]);

@@ -1,11 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import profile from "@/public/images/profile.jpg";
-import Button from "../components/Button";
+import Button from "@/components/Button";
 
 const Main = () => {
   return (
-    <div className="w-full text-center bg-point" id="Main">
+    <div
+      className="w-full min-h-screen text-center bg-point flex items-center"
+      id="Main"
+    >
       <div className=" max-w-[1600px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div className="flex justify-center items-center flex-wrap md:justify-between">
           <div className="flex-grow mx-10 justify-center md:flex-grow-0 md:mx-auto">
